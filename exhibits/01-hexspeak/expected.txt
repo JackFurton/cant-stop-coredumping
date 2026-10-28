@@ -1,0 +1,17 @@
+rax  0x00000000deadbeef
+rbx  0xcafebabecafebabe
+rcx  0xfeedfacefeedface
+rdx  0x0d15ea5e0d15ea5e
+rsi  0xbaadf00dbaadf00d
+rdi  0x8badf00d8badf00d
+r8   0xdeadc0dedeadc0de
+r9   0xbaddcafebaddcafe
+r10  0x0defaced0defaced
+r11  0xc0dedbadc0dedbad
+r12  0xfee1deadfee1dead
+r13  0x1badb0021badb002
+r14  0xcafed00dcafed00d
+r15  0x0badc0de0badc0de
+
+signal   11 (SIGSEGV)
+si_addr  0xdeadbeef

@@ -1,0 +1,17 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y gdb
+      # runners pipe cores to apport by default
+      - run: sudo sysctl kernel.core_pattern=core.%e.%p
+      - run: make check
+      - run: make -s gallery
